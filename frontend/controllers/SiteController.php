@@ -30,6 +30,11 @@ class SiteController extends Controller
         ];
     }
 
+    public function actionStructure()
+    {
+        return $this->render('structure');
+    }
+
 
 
 
