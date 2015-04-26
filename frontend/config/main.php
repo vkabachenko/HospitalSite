@@ -31,6 +31,9 @@ return [
         'template' => [
             'class' => 'frontend\components\TemplateComponent',
         ],
+        'formatter' => [
+            'dateFormat' => 'dd.MM.y',
+        ],
     ],
     'params' => $params,
 ];

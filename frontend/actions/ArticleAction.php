@@ -21,21 +21,17 @@ class ArticleAction  extends Action {
      */
     public function run()
     {
-        /* @var $leftMenu LeftMenu */
-        $leftMenu = LeftMenu::findOne(['controller' => $this->controller->id,
-                                       'action' => $this->id,]);
-        if ($leftMenu == null) {
-            throw new HttpException(404);
-        }
+        /* @var $currentMenu LeftMenu */
+        $currentMenu = LeftMenu::getCurrentMenu($this->controller->id,$this->id);
 
         /* @var $article Articles */
-        $article = Articles::findOne(['id_menu' => $leftMenu->id]);
+        $article = Articles::findOne(['id_menu' => $currentMenu->id]);
 
         if ($article == null) {
             throw new HttpException(404);
         }
 
-        $title = $article->title ?: $leftMenu->title;
+        $title = $article->title ?: $currentMenu->title;
         $article = $article->article ?: 'Статья в подготовке';
 
         return $this->controller->render('//common/article',

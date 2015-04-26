@@ -1,4 +1,6 @@
 <?php
 return [
-    'adminEmail' => 'admin@example.com',
+    'articleAction' => [
+        'class' => 'frontend\actions\ArticleAction',
+    ],
 ];

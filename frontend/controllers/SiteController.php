@@ -10,8 +10,6 @@ use yii\web\Controller;
  */
 class SiteController extends Controller
 {
-
-
     /**
      * @inheritdoc
      */
@@ -21,12 +19,8 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
-            'index' => [
-                'class' => 'frontend\actions\ArticleAction',
-            ],
-            'history' => [
-                'class' => 'frontend\actions\ArticleAction',
-            ],
+            'index' => Yii::$app->params['articleAction'],
+            'history' => Yii::$app->params['articleAction'],
         ];
     }
 

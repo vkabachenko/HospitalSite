@@ -24,6 +24,9 @@ AppAsset::register($this);
     <div class="wrap">
 
         <?php
+
+            $articleItems = \Yii::$app->article->getArticles();
+
             NavBar::begin([
                 'brandLabel' => 'Админ панель',
                 'brandUrl' => Yii::$app->homeUrl,
@@ -32,7 +35,10 @@ AppAsset::register($this);
                 ],
             ]);
             $menuItems = [
-                ['label' => 'Структура', 'url' => ['/site/structure']],
+                ['label' => 'Статьи', 'items' => $articleItems],
+                ['label' => 'Документы', 'url' => ['docs/index']],
+                ['label' => 'Структура', 'url' => ['site/structure']],
+                ['label' => 'Вакансии', 'url' => ['jobs/index']],
             ];
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

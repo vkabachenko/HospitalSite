@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\web\HttpException;
 
 /**
  * This is the model class for table "left_menu".
@@ -66,6 +67,22 @@ class LeftMenu extends \yii\db\ActiveRecord
     public function getArticle()
     {
         return $this->hasOne(Articles::className(), ['id_menu' => 'id']);
+    }
+
+    /**
+     * @return \common\models\LeftMenu
+     * @parameter $Controller string
+     * @parameter $Action string
+     */
+    public static function getCurrentMenu($Controller,$Action) {
+
+        $model = static::findOne(['controller' => $Controller,'action' => $Action]);
+
+        if ($model)
+            return  $model;
+        else
+            throw new HttpException(404);
+
     }
 
 }

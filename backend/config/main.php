@@ -26,6 +26,9 @@ return [
                 ],
             ],
         ],
+        'article' => [
+            'class' => 'backend\components\ArticleComponent',
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
