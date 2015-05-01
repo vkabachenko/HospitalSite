@@ -8,11 +8,12 @@ use yii\helpers\HtmlPurifier;
 
 $this->title = $title;
 ?>
-<div>
 
-    <h1>
+<div class="article">
+
+    <h2>
         <?= Html::encode($title); ?>
-    </h1>
+    </h2>
         <?= HtmlPurifier::process($article) ?>
 
 </div>

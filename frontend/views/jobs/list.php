@@ -8,10 +8,11 @@ use yii\widgets\ListView;
 $this->title = $title;
 
 ?>
+<div class="jobs">
 <h2>
     <?= $title ?>
 </h2>
-<div class="jobs">
+
      <?= ListView::widget([
         'dataProvider' => $provider,
         'itemView' => '_item',

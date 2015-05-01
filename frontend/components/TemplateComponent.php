@@ -32,6 +32,9 @@ class TemplateComponent extends Component {
             $items[] = [
                 'label' => $topMenuItem->title,
                 'url' => [$topMenuItem->controller.'/index'],
+                'linkOptions' => [
+                    'class' => 'topNavLink',
+                ],
             ];
         }
         return $items;

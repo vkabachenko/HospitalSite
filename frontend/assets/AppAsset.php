@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         'css/frontend.css',
     ];
     public $js = [
+        'js/equalHeight.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

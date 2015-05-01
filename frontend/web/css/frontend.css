@@ -1,0 +1,156 @@
+@font-face {
+    font-family:antiqua;
+    src:url(../files/fonts/ANTQUAB.TTF);
+}
+
+html,
+body {
+    height: 100%;
+    background:#CEEDE1;
+    color:#111236;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color:#090475;
+    font-size:24px;
+    font-weight: bold;
+}
+
+p {
+    text-indent: 15px;
+    margin-bottom: 5px;
+}
+
+
+div#wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding-bottom: 60px;
+    background:#F0F0F0;
+    border: darkgray double 2px;
+    border-bottom: none;
+    border-top: none ;
+}
+
+div#header {
+    height:170px;
+    background: #E1E2EB url(../files/img/gerb.png) no-repeat 10px 10px;
+}
+
+#titleOrg {
+    padding:30px 0 0 140px;
+}
+
+#titleOrg  h1 {
+    font-family:antiqua;
+    font-weight: bold;
+    color:navy;
+}
+
+#titleOrg .orgDetails {
+    font-family: Verdana, Arial, sans-serif;
+    font-size:90%;
+    text-align: center;
+    color: #006666;
+}
+
+#titleOrg .orgDetails span {
+    margin-left: 20px;
+}
+
+#phones {
+    background: url(../files/img/serpent.png) no-repeat 90% 10px;
+    border-left: darkgray double 2px;
+    padding-left:15px;
+    margin-top: 5px;
+}
+
+
+.mainName {
+    color:#006666;
+    margin:10px 0 0 0;
+    font-weight: bold;
+    font-family:"Courier New";
+}
+
+.mainTel {
+    color:red;
+    margin:0;
+    font-weight: bold;
+    font-size: 120%;
+    font-family:"Courier New";
+}
+
+#topNav {
+    padding:5px 15px;
+    border:solid #AAA2F5 2px;
+    border-left: none;
+    border-right: none;
+    background: #FAF8CD;
+}
+
+.topNavLink {
+    font-weight: bold;
+}
+
+#leftNav li a{
+    color:#117D85;
+}
+
+#leftNav li.active a{
+    background: #38731D;
+    color:#fff;
+}
+
+#leftSidebar {
+    padding-top:10px;
+}
+
+#rightSidebar {
+    border-left:  darkgray double 2px;
+    background: #fff;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    background: #E1E2EB;
+    border-top: solid #AAA2F5 2px;
+    color: #757C7D;
+}
+
+footer p {
+    margin:0;
+}
+
+div.required label:after {
+    content: " *";
+    color: red;
+}
+
+.jobs h2 {
+    margin-bottom:20px;
+}
+
+.job {
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom:3px darkgray double;
+    font-weight: bold;
+}
+
+.job p span {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.job .date {
+    font-size:80%;
+    font-weight: normal;
+    font-style: italic;
+    text-indent:10px;
+}
+
+
