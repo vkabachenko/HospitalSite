@@ -153,4 +153,8 @@ div.required label:after {
     text-indent:10px;
 }
 
+.structure p {
+    text-indent: 0;
+}
+
 

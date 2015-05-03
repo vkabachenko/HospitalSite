@@ -14,6 +14,6 @@ extract($params);
     <?= $node->name ?>
 </h2>
 
-<div>
+<div class="structure">
 <?= $node->content; ?>
 </div>

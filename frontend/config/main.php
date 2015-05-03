@@ -12,9 +12,13 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+                '<_c>' => '<_c>/index',
+            ],
+            'suffix' =>'.html',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

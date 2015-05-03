@@ -25,6 +25,7 @@ AppAsset::register($this);
 
         <?php
 
+
             $articleItems = \Yii::$app->article->getArticles();
 
             NavBar::begin([
@@ -34,21 +35,18 @@ AppAsset::register($this);
                     'class' => 'navbar-inverse',
                 ],
             ]);
+            if (\Yii::$app->user->isGuest) {
+                $menuItems = [];
+            }
+            else {
             $menuItems = [
                 ['label' => 'Статьи', 'items' => $articleItems],
                 ['label' => 'Документы', 'url' => ['docs/index']],
                 ['label' => 'Структура', 'url' => ['site/structure']],
                 ['label' => 'Вакансии', 'url' => ['jobs/index']],
             ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
-                $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
             }
+
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
@@ -60,13 +58,6 @@ AppAsset::register($this);
           <?= $content ?>
         </div>
    </div>
-
-
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        </div>
-    </footer>
 
     <?php $this->endBody() ?>
 </body>

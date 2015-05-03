@@ -37,7 +37,7 @@ AppAsset::register($this);
                 <p class="mainName">Приемное отделение</p>
                 <p class="mainTel">625386</p>
                 <p class="mainName">Скорая помощь</p>
-                <p class="mainTel">888888</p>
+                <p class="mainTel">678613</p>
             </div>
         </div>
         <div class="row">

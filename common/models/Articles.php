@@ -43,10 +43,8 @@ class Articles extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'id_menu' => 'Id Menu',
-            'title' => 'Title',
-            'article' => 'Article',
+            'title' => 'Заголовок',
+            'article' => 'Статья',
         ];
     }
 

@@ -4,20 +4,7 @@
    use frontend\assets\FontAwesomeAsset;
 /* @var $this yii\web\View */
 
-/*
-echo TreeView::widget([
-    // single query fetch to render the tree
-    'query' => Structure::find()->addOrderBy('root, lft'),
-    'fontAwesome' => false,     // optional
-    'isAdmin' => true,         // optional (toggle to enable admin mode)
-    'displayValue' => 1,        // initial display value
-    'softDelete' => true,       // defaults to true
-    'cacheSettings' => [
-        'enableCache' => true   // defaults to true
-    ],
-    'showTooltips' => false,
-]);
-*/
+$this->title = 'Структура';
 
 FontAwesomeAsset::register($this);
 
