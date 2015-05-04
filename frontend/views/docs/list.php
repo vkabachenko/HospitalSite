@@ -11,7 +11,7 @@ $this->title = $title;
 <h2>
     <?= $title ?>
 </h2>
-<div class="docs-normative">
+<div class="normative">
      <?= ListView::widget([
         'dataProvider' => $provider,
         'itemView' => '_document',
