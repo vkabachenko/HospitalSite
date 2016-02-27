@@ -50,12 +50,13 @@ div#header {
 #titleOrg  h1 {
     font-family:antiqua;
     font-weight: bold;
+    font-size:30px;
     color:navy;
 }
 
 #titleOrg .orgDetails {
     font-family: Verdana, Arial, sans-serif;
-    font-size:90%;
+    font-size:85%;
     text-align: center;
     color: #006666;
 }

@@ -6,7 +6,7 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
-use \yii\web\Request;$baseUrl = str_replace('/frontend/web', '', (new \yii\web\Request)->getBaseUrl());
+// $baseUrl = str_replace('/frontend/web', '', (new \yii\web\Request)->getBaseUrl());
 
 return [
     'id' => 'app-frontend',
@@ -14,10 +14,11 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'request' => [
-            'baseUrl' => $baseUrl,
-        ],
+/*        'request' => [
+            'baseUrl' => '/',
+        ],*/
         'urlManager' => [
+/*            'baseUrl' => '/',*/
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [

@@ -27,9 +27,9 @@ AppAsset::register($this);
     <div class="container" id="wrapper">
         <div class="row" id="header">
             <div class="col-xs-8" id="titleOrg">
-                <h1>Псковская районная больница</h1>
-                <p class="orgDetails">Государственное бюджетное учреждение здравоохранения «Псковская районная больница»</p>
-                <p class="orgDetails">ИНН 6018000612<span>ОГРН 102600234355</span></p>
+                <h1>Псковская межрайонная больница</h1>
+                <p class="orgDetails">Государственное бюджетное учреждение здравоохранения «Псковская межрайонная больница»</p>
+                <p class="orgDetails">ИНН 6027164688<span>ОГРН 1156027006629</span></p>
             </div>
             <div class="col-xs-4" id="phones">
                 <p class="mainName">Регистратура поликлиники</p>
